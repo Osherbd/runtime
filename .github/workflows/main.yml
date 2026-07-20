@@ -2,7 +2,7 @@ name: 'official plugin with jwt'
 on: push
 jobs:
   fetch_secrets:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       id-token: write
       contents: read
@@ -14,7 +14,7 @@ jobs:
         with:
           access-id: p-sq9mxbj4flltos
           access-type: jwt
-          api-url: http://ec2-18-118-131-65.us-east-2.compute.amazonaws.com:8000/api/v2
+          api-url: http://localhost:8000/api/v2
           static-secrets: |
             - name: "/asd"
               output-name: "my_secret"
