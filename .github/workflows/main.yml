@@ -12,7 +12,7 @@ jobs:
         uses: akeyless-community/akeyless-github-action@v1.1.6
         id: fetch-secrets
         with:
-          access-id: p-sq9mxbj4flltos
+          access-id: p-zh8m4e3rrz5los
           access-type: jwt
           api-url: http://localhost:8000/api/v2
           static-secrets: |
